@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Love Story ❤️</title>
+
+<link rel="stylesheet" href="valentine.css">
+</head>
+
+<body>
+
+<!-- MUSIC -->
+<audio id="musicGame" loop src="lagu-awal.mp3"></audio>
+<audio id="musicLetter" loop src="lagu-surat.mp3"></audio>
+
+<!-- START -->
+<div class="box" id="start">
+  <h2>Hai Sayang ❤️</h2>
+  <p>Aku bikin sesuatu spesial buat kamu</p>
+  <button onclick="startGame()">Mulai</button>
+</div>
+
+<!-- QUIZ -->
+<div class="box" id="quiz">
+  <h3 id="question"></h3>
+  <button onclick="nextQ()">Lanjut</button>
+</div>
+
+<!-- QUESTION -->
+<div class="box" id="final">
+  <h2>Janji ya…</h2>
+  <p>Kita jaga hubungan ini bareng-bareng</p>
+  <button onclick="showLetter()">IYA 💖</button>
+</div>
+
+<!-- LETTER -->
+<div class="box" id="letter">
+  <p>Hai,</p>
+  <p>Aku cuma mau bilang beberapa hal yang mungkin jarang aku ucapin langsung.</p>
+  <p>Aku senang sama kamu. Bukan karena hal besar atau momen yang dramatis, tapi justru karena hal-hal kecil yang sering nggak kelihatan. Cara kamu cerita, cara kamu respon hal sepele, dan cara kamu tetap jadi diri sendiri tanpa dibuat-buat. Semua itu bikin aku nyaman.</p>
+  <p>Aku sadar aku bukan orang yang paling jago nunjukin perasaan. Kadang aku lebih milih diam, atau nganggep sesuatu “nanti aja diomongin”. Tapi bukan berarti aku nggak peduli. Aku peduli, cuma caraku sering sederhana dan mungkin nggak selalu kelihatan.</p>
+  <p>Sama kamu, aku ngerasa nggak perlu jadi orang lain. Aku bisa capek, bisa random, bisa nggak sempurna. Dan kamu tetap ada. Itu hal yang jarang, dan aku hargai banget.</p>
+  <p>Aku nggak janji hal muluk-muluk. Aku cuma pengin terus jalan bareng, ngobrol kalau ada apa-apa, dan sama-sama belajar jadi lebih baik. Kalau nanti ada beda pendapat, semoga kita tetap milih buat saling denger, bukan saling pergi.</p>
+  <p>Intinya, aku nyaman sama kamu.<br>
+    Dan aku pengin terus ada di sini, bareng kamu.
+  </p>
+
+  <p class="signature">
+    — dari Hr
+  </p>
+  <button onclick="showVideo()">Lihat Kenangan Kita 🎥</button>
+</div>
+
+<!-- VIDEO -->
+<div class="video-wrapper" id="videoBox">
+  <div class="video-card">
+    <video id="loveVideo" controls playsinline preload="metadata">
+      <source src="kenangan.mp4" type="video/mp4">
+      Browser kamu tidak mendukung video
+    </video>
+  </div>
+</div>
+
+<button id="noBtn">TIDAK 💔</button>
+
+<script src="valentine.js"></script>
+</body>
+</html>
