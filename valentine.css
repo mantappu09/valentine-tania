@@ -3,11 +3,18 @@
 }
 
 /* ===== BACKGROUND FOTO SLIDER ===== */
+html, body{
+  height:100%;
+}
 
 body{
   margin:0;
   padding:0;
   overflow-x:hidden;
+}
+
+.bg-slider{
+  height:100dvh;  /* lebih stabil di mobile */
 }
 
 .bg-slider{
@@ -134,6 +141,7 @@ video{
   0%{transform:scale(0);opacity:1}
   100%{transform:scale(18);opacity:0}
 }
+
 
 
 
