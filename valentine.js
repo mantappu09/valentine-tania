@@ -80,6 +80,32 @@ function showLetter(){
   romanticHearts();
 }
 
+const images = [
+  "images/foto1.jpg",
+  "images/foto2.jpg",
+  "images/foto3.jpg"
+];
+
+let current = 0;
+const bg = document.querySelector(".bg-slider");
+
+function changeBackground(){
+  bg.style.opacity = 0;
+
+  setTimeout(() => {
+    bg.style.backgroundImage = `url('${images[current]}')`;
+    bg.style.opacity = 1;
+    current = (current + 1) % images.length;
+  }, 800);
+}
+
+// foto pertama
+bg.style.backgroundImage = `url('${images[0]}')`;
+bg.style.opacity = 1;
+
+// ganti setiap 5 detik
+setInterval(changeBackground, 5000);
+
 
 function romanticFireworks(){
   setInterval(()=>{
@@ -99,3 +125,4 @@ video.addEventListener("loadedmetadata", () => {
     video.style.maxWidth = "300px";
   }
 });
+
