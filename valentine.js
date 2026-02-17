@@ -81,12 +81,12 @@ function showLetter(){
 }
 
 const images = [
-  "images/3.jpg",
-  "images/4.jpg",
-  "images/5.jpg",
-  "images/6.jpg",
-  "images/7.jpg",
-  "images/8.jpg"
+  "images/3.jpeg",
+  "images/4.jpeg",
+  "images/5.jpeg",
+  "images/6.jpeg",
+  "images/7.jpeg",
+  "images/8.jpeg"
 ];
 
 let current = 0;
@@ -128,5 +128,6 @@ video.addEventListener("loadedmetadata", () => {
     video.style.maxWidth = "300px";
   }
 });
+
 
 
