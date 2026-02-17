@@ -11,6 +11,33 @@ body{
   min-height:100vh;
   overflow:auto;
 }
+/* ===== BACKGROUND FOTO SLIDER ===== */
+
+body{
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
+
+.bg-slider{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  z-index:-1;
+  transition:opacity 1.5s ease-in-out;
+  filter:brightness(0.6);
+}
+
+/* supaya isi tetap jelas */
+.love-letter{
+  position:relative;
+  z-index:2;
+}
 
 .box{
   display:none;
@@ -116,3 +143,4 @@ video{
   0%{transform:scale(0);opacity:1}
   100%{transform:scale(18);opacity:0}
 }
+
